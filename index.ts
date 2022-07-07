@@ -53,5 +53,6 @@ function xYCoordinateInterface (xY: PointInterface) {
 }
 
 // Type Assertions
-
+const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
+const myCanvasVariant = <HTMLCanvasElement>document.getElementById("main_canvas");
 
