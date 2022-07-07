@@ -24,3 +24,8 @@ const numbers = [1, 2, 3]
 names.forEach(s => names.toUpperCase()) // TS was still able to recognize the type of 'names' as 'string[]'
 numbers.forEach(s => numbers.toUpperCase()) // TS was still able to recognize the type of 'names' as 'number[]'
 
+// Object types
+function xYCoordinate(x : number, y : number) {
+    return("The value of the horizontal position is '" + x + "', while the the veritical position is '" + y + "'.")
+}
+
