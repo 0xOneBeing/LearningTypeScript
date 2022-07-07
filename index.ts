@@ -43,3 +43,15 @@ function xYCoordinateVariant(xY: Point) {
     return("The value of the horizontal position is '" + xY.x + "', while the the veritical position is '" + xY.y + "'.")
 }
 
+// Interfaces
+interface PointInterface {
+    x: number;
+    y: number;
+}
+function xYCoordinateInterface (xY: PointInterface) {
+    return "The value of the horizontal position is '" + xY.x + "', while the the veritical position is '" + xY.y + "'."
+}
+
+// Type Assertions
+
+
