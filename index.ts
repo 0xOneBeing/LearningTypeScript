@@ -34,3 +34,12 @@ function profile(obj: (fName: string; mName?:string; lName: string)) { // <--- m
     // do something
 }
 
+// Type Alias
+type Point = {
+    x: number;
+    y: number;
+}
+function xYCoordinateVariant(xY: Point) {
+    return("The value of the horizontal position is '" + xY.x + "', while the the veritical position is '" + xY.y + "'.")
+}
+
