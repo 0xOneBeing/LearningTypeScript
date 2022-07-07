@@ -29,3 +29,8 @@ function xYCoordinate(x : number, y : number) {
     return("The value of the horizontal position is '" + x + "', while the the veritical position is '" + y + "'.")
 }
 
+// Optional properties
+function profile(obj: (fName: string; mName?:string; lName: string)) { // <--- mName is an optional property that TS will allow
+    // do something
+}
+
