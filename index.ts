@@ -63,3 +63,11 @@ function userAvailableNames(s: string, alignment: "Sunday" | "Obinna" | "Oruwhon
 userAvailableNames("Any string", "Sunday")
 // userAvailableNames("Any string", "Jibbz") <--- Error because 'Jibbz' is not found as a literal type
 
+// Non-null Assertion Operator (Postfix !)
+function liveDangerously(x?: number | null) {
+    // No error
+    console.log(x!.toFixed());
+}
+
+// Readup on Enums here: https://www.typescriptlang.org/docs/handbook/enums.html
+
