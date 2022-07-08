@@ -71,3 +71,12 @@ function liveDangerously(x?: number | null) {
 
 // Readup on Enums here: https://www.typescriptlang.org/docs/handbook/enums.html
 
+// Less common primitives
+    const oneHundred: bigint = BigInt(100); // <--- Creating a bigint via the BigInt function
+    const anotherHundred: bigint = 100n; // <--- Creating a BigInt via the literal syntax
+    // Read up on BigInt here: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-2.html#bigint
+
+    const fName = Symbol("name")
+    const lName = Symbol("name")
+
+    // But why is (fName === lName) returning false since they've got the exact same value???
