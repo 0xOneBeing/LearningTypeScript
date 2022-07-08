@@ -15,7 +15,7 @@ function anyFunc(someVariable : any) {
 someVariable : any => console.log('It also f**king works!')
 
 function returnTypeAllocations(answer) : boolean { // <-- Infers that the return type must be a boolean
-    return answer // == 0 : true ? false
+    return (answer == 0 ? true : false)
 }
 
 // Anonymous functions
@@ -30,7 +30,7 @@ function xYCoordinate(x : number, y : number) {
 }
 
 // Optional properties
-function profile(obj: (fName: string; mName?:string; lName: string)) { // <--- mName is an optional property that TS will allow
+function profile(obj: (fName: string, mName?:string, lName: string)) { // <--- mName is an optional property that TS will allow
     // do something
 }
 
@@ -55,4 +55,11 @@ function xYCoordinateInterface (xY: PointInterface) {
 // Type Assertions
 const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
 const myCanvasVariant = <HTMLCanvasElement>document.getElementById("main_canvas");
+
+// Literal types
+function userAvailableNames(s: string, alignment: "Sunday" | "Obinna" | "Oruwhone") {
+    // do somethig here
+}
+userAvailableNames("Any string", "Sunday")
+// userAvailableNames("Any string", "Jibbz") <--- Error because 'Jibbz' is not found as a literal type
 
